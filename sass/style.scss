@@ -221,6 +221,9 @@ li {
             height: calc(100vh - 100px);
             margin: 0 auto;
             text-align: center;
+            &.open {
+                display: block;
+            }
         }
         &:hover {
             span {
@@ -237,9 +240,6 @@ li {
             ul {
                 display: block;
             }
-        }
-        &.open {
-            display: block;
         }
         .copyright {
             display: none;
@@ -388,7 +388,6 @@ li {
                 min-width: 1120px;
                 height: 873px;
                 border-radius: 50px;
-                object-fit: cover;
                 @include m.sp {
                     min-width: 100%;
                     height: auto;

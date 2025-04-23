@@ -268,6 +268,9 @@ li {
     margin: 0 auto;
     text-align: center;
   }
+  #header .header__menu.open {
+    display: block;
+  }
 }
 #header .header__menu:hover span:nth-child(2) {
   display: none;
@@ -281,9 +284,6 @@ li {
   }
 }
 #header .header__menu:hover ul {
-  display: block;
-}
-#header .header__menu.open {
   display: block;
 }
 #header .header__menu .copyright {
@@ -453,8 +453,6 @@ li {
   min-width: 1120px;
   height: 873px;
   border-radius: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .content #mainvisual .mainvisual__img img {
