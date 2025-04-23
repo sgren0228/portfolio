@@ -129,13 +129,13 @@ li {
 }
 
 .sec__title .sec__title-ja {
-  display: inline-block;
+  display: block;
   font-size: 1.5rem;
   margin-bottom: 20px;
   font-family: "Zen Kaku Gothic New";
 }
 .sec__title .sec__title-en {
-  display: inline-block;
+  display: block;
   font-size: 8rem;
   font-family: "kanit";
   font-weight: 700;
@@ -719,7 +719,7 @@ li {
   right: -20%;
 }
 #service .service__content .service__img {
-  min-width: 516px;
+  max-width: 516px;
   height: 464px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -732,7 +732,6 @@ li {
 }
 @media screen and (max-width: 768px) {
   #service .service__content .service__img img {
-    max-width: 335px;
     width: 100%;
   }
 }
