@@ -734,6 +734,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   #service .service__content .service__img img {
+    max-width: 335px;
     width: 100%;
   }
 }

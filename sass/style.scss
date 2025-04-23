@@ -627,6 +627,7 @@ li {
             }
             img {
                 @include m.sp {
+                    max-width: 335px;
                     width: 100%;
                 }
             }
