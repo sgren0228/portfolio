@@ -744,6 +744,9 @@ li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 #service .service__content .service__box .service__number__box .service--number {
@@ -764,8 +767,16 @@ li {
     z-index: 999;
   }
 }
+@media screen and (max-width: 768px) {
+  #service .service__content .service__box .service__number__box.number--2, #service .service__content .service__box .service__number__box.number--3 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
 #service .service__content .service__box .service__number__box .service__title {
-  display: inline-block;
+  display: block;
   font-size: 1.5rem;
   padding: 10px 16px;
   background-color: #fff;

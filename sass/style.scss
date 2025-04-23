@@ -637,6 +637,7 @@ li {
             .service__number__box {
                 @include m.sp {
                     display: flex;
+                    justify-content: space-between;
                 }
                 .service--number {
                     display: block;
@@ -654,8 +655,14 @@ li {
                         z-index: 999;
                     }
                 }
+                &.number--2,
+                &.number--3 {
+                    @include m.sp {
+                        flex-direction: row-reverse;
+                    }
+                }
                 .service__title {
-                    display: inline-block;
+                    display: block;
                     font-size: 1.5rem;
                     padding: 10px 16px;
                     background-color: #fff;
