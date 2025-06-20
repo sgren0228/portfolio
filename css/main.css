@@ -1,0 +1,143 @@
+body {
+  font-family: "Noto Sans JP";
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  color: #444;
+  line-height: 200%;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+.btn {
+  width: 300px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.sec__title {
+  font-size: 3rem;
+  margin-bottom: 80px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+}
+#header .header__wrapper {
+  max-width: 1250px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#header .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+#fv .fv__wrapper {
+  position: relative;
+}
+#fv .btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#values .values__wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+#values .values__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+#values .values__item {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 40px 25px;
+}
+#values .values__img {
+  display: block;
+  width: 70px;
+  margin: 0 auto 10px;
+}
+#values .values__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#service .service__wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+#service .service__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+#service .service__item {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 40px 25px;
+}
+#service .service__img {
+  display: block;
+  width: 70px;
+  margin: 0 auto 10px;
+}
+#service .service__title {
+  text-align: center;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */
