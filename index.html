@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ポートフォリオ</title>
-  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="shortcut icon" href="img/img1.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +16,7 @@
   <header id="header">
     <div class="header__wrapper">
       <h1>
-        <a href="#"><img src="img/img1.png" alt="logo" class="logo"></a>
+        <a href="#" class="site__title">REN</a>
       </h1>
       <nav>
         <ul class="header__list">
@@ -30,46 +29,103 @@
         </ul>
       </nav>
     </div>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div id="mask"></div>
   </header>
 
   
   <main>
-   
     <section id="fv">
       <div class="fv__wrapper">
         <div id="particles-js"></div>
+        <p class="catchphrase">Webコーダー/実務経験有り</p>
+        <div class="btn__wrapper">
+          <a href="" class="btn">CONTACT</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrapper">
+        <h2 class="sec__title">SKILLS<span>スキル</span></h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <div class="skills__img">
+              <img src="img/HTML5.png" alt="">
+            </div>
+            <p>HTML</p>
+          </li>
+          <li class="skills__item">
+            <div class="skills__img">
+              <img src="img/css.png" alt="">
+            </div>
+            <p>CSS</p>
+          </li>
+          <li class="skills__item">
+            <div class="skills__img">
+              <img src="img/sass.avif" alt="">
+            </div>
+            <p>SASS</p>
+          </li>
+          <li class="skills__item">
+            <div class="skills__img">
+              <img src="img/js.png" alt="">
+            </div>
+            <p>JavaScript</p>
+          </li>
+          <li class="skills__item">
+            <div class="skills__img">
+              <img src="img/jquery.webp" alt="">
+            </div>
+            <p>jQuery</p>
+          </li>
+          <li class="skills__item">
+            <div class="skills__img">
+              <img src="img/php.avif" alt="">
+            </div>
+            <p>PHP</p>
+          </li>
+          <li class="skills__item">
+            <div class="skills__img">
+              <img src="img/gulp1.png" alt="">
+            </div>
+            <p>gulp</p>
+          </li>
+          <li class="skills__item">
+            <div class="skills__img">
+              <img src="img/git.png" alt="">
+            </div>
+            <p>GitHub</p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section id="values">
       <div class="wrapper">
-        <h2 class="sec__title">VALUES</h2>
+        <h2 class="sec__title">VALUES<span>価値観</span></h2>
         <ul class="values__list">
           <li class="values__item">
-            <img src="img/img1.png" alt="" class="values__img">
+            <img src="img/values1.png" alt="" class="values__img">
             <h3 class="values__title">誠実性</h3>
             <p>
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
+              小さなことも誤魔化さず、信頼を積み重ねていきます。
             </p>
           </li>
           <li class="values__item">
-            <img src="img/img1.png" alt="" class="values__img">
-            <h3 class="values__title">誠実性</h3>
+            <img src="img/values2.png" alt="" class="values__img">
+            <h3 class="values__title">透明性</h3>
             <p>
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
+              作業状況や課題を包み隠さず、常にオープンな対応を心がけています。
             </p>
           </li>
           <li class="values__item">
-            <img src="img/img1.png" alt="" class="values__img">
-            <h3 class="values__title">誠実性</h3>
+            <img src="img/values3.png" alt="" class="values__img">
+            <h3 class="values__title">連携性</h3>
             <p>
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
+              定期的な報告・連絡・相談を徹底し、安心できるやり取りを提供します。
             </p>
           </li>
         </ul>
@@ -78,33 +134,27 @@
 
     <section id="service">
       <div class="wrapper">
-        <h2 class="sec__title">SERVICE</h2>
+        <h2 class="sec__title">SERVICE<span>サービス</span></h2>
         <ul class="service__list">
           <li class="service__item">
-            <img src="img/img1.png" alt="" class="service__img">
-            <h3 class="service__title">誠実性</h3>
+            <img src="img/service1.png" alt="" class="service__img">
+            <h3 class="service__title">コーディング</h3>
             <p>
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
+              デザインの意図を正確に再現し、レスポンシブ対応まで丁寧に仕上げます。
             </p>
           </li>
           <li class="service__item">
-            <img src="img/img1.png" alt="" class="service__img">
-            <h3 class="service__title">誠実性</h3>
+            <img src="img/service2.png" alt="" class="service__img">
+            <h3 class="service__title">デザイン制作</h3>
             <p>
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
+              ユーザー目線と導線設計を意識した、見やすく伝わるデザインを制作します。
             </p>
           </li>
           <li class="service__item">
-            <img src="img/img1.png" alt="" class="service__img">
-            <h3 class="service__title">誠実性</h3>
+            <img src="img/service3.png" alt="" class="service__img">
+            <h3 class="service__title">保守運用</h3>
             <p>
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキスト
+              公開後も安心して任せていただけるよう、更新や軽微な修正にも柔軟に対応します。
             </p>
           </li>
         </ul>
@@ -113,7 +163,8 @@
 
     <section id="works">
       <div class="wrapper">
-        <h2 class="sec__title">WORKS</h2>
+        <h2 class="sec__title">WORKS<span>実績</span></h2>
+        <span class="detail">※クリックすると詳細をご覧いただけます。</span>
         <ul class="works__list">
           <li class="works__item">
             <img src="img/works1.png" alt="">
@@ -135,9 +186,11 @@
     <div class="wrapper">
       <div class="flex">
         <p class="copyright">&copy;2025 ren-web</p>
-        <div class="top__btn">
-          <a href="index.html"><i class="fa-solid fa-arrow-up icon"></i></a>
-        </div>
+        <a href="index.html">
+          <div class="top__btn">
+            <i class="fa-solid fa-arrow-up icon"></i>
+          </div>
+        </a>
       </div>
     </div>
   </footer>
