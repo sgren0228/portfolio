@@ -1,0 +1,158 @@
+@use "_mixin" as m;
+body {
+  font-family: "Noto Sans JP";
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+p {
+  color: #444;
+  line-height: 200%;
+}
+li {
+  list-style: none;
+}
+h3 {
+  font-size: 1.75rem;
+}
+.btn {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.sec__title {
+  font-size: 3rem;
+  margin-bottom: 80px;
+}
+.logo {
+  width: 80px;
+}
+
+// fv
+#fv {
+  .fv__wrapper {
+    position: relative;
+    height: 100vh;
+  }
+  .btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// 共通wrapper
+.wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+// values
+#values {
+  .values__wrapper {
+    @extend .wrapper;
+  }
+  .values__list {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    @include m.sp {
+      flex-direction: column;
+      background-color: yellow;
+    }
+  }
+  .values__item {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 40px 25px;
+    @include m.sp {
+      margin: 0 auto;
+    }
+  }
+  .values__img {
+    display: block;
+    width: 70px;
+    margin: 0 auto 10px;
+  }
+  .values__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+// service
+#service {
+  .service__wrapper {
+    @extend .wrapper;
+  }
+  .service__list {
+    display: flex;
+    gap: 40px;
+    @include m.sp {
+      flex-direction: column;
+      background-color: yellow;
+    }
+  }
+  .service__item {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 40px 25px;
+    @include m.sp {
+      margin: 0 auto;
+    }
+  }
+  .service__img {
+    display: block;
+    width: 70px;
+    margin: 0 auto 10px;
+  }
+  .service__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+// works
+#works {
+    .works__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .works__item {
+        width: 30%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+        padding: 20px 10px;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .category {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: #0099DD;
+        color: #fff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+}
