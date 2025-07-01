@@ -18,12 +18,14 @@ menuLinks.forEach(link => {
     link.addEventListener('click',() => {
         hamburger.classList.remove('active');
         header__list.classList.remove('active');
+        logo.classList.remove('active');
     })
 })
 
 logo.addEventListener('click',() => {
     hamburger.classList.remove('active');
     header__list.classList.remove('active');
+    logo.classList.remove('active');
 })
 
 const header = document.getElementById('header');
