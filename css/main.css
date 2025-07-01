@@ -455,6 +455,7 @@ h3 {
   }
 }
 #works .works__item {
+  position: relative;
   width: 30%;
   height: auto;
   border-radius: 10px;
@@ -468,7 +469,7 @@ h3 {
 }
 #works img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
 }
 #works .category {
@@ -480,6 +481,14 @@ h3 {
   padding: 5px 8px;
   border-radius: 5px;
   font-size: 10px;
+}
+#works .warm {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #header {
@@ -496,6 +505,9 @@ h3 {
   background-color: #000;
 }
 #header.scrolled .site__title {
+  color: #fff;
+}
+#header.scrolled .header__list a {
   color: #fff;
 }
 #header.scrolled #hamburger span {
