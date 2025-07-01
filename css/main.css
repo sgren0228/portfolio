@@ -492,6 +492,7 @@ h3 {
 #header .site__title {
   font-size: 30px;
   letter-spacing: 5px;
+  color: #000;
 }
 #header .header__wrapper {
   max-width: 1250px;
@@ -507,8 +508,62 @@ h3 {
   gap: 24px;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  #header .header__list {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 10;
+  }
+  #header .header__list.active {
+    opacity: 1;
+  }
+}
 #header a {
   font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  #header a {
+    color: #fff;
+  }
+}
+#header #hamburger {
+  position: absolute;
+  width: 50px;
+  top: 25px;
+  right: 0;
+  display: none;
+  z-index: 20;
+}
+#header #hamburger span {
+  display: block;
+  background-color: #fff;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+#header #hamburger span:nth-of-type(1) {
+  top: 15px;
+}
+#header #hamburger span:nth-of-type(2) {
+  top: 25px;
+}
+#header #hamburger span:nth-of-type(3) {
+  top: 35px;
+}
+@media screen and (max-width: 768px) {
+  #header #hamburger {
+    display: block;
+  }
 }
 
 #footer {
