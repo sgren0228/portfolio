@@ -25,3 +25,16 @@ logo.addEventListener('click',() => {
     hamburger.classList.remove('active');
     header__list.classList.remove('active');
 })
+
+const header = document.getElementById('header');
+const fv = document.getElementById('fv');
+const fvHeight = fv.offsetHeight;
+
+window.addEventListener('scroll',() => {
+    const fvHeight = fv.offsetHeight;
+    if(window.scrollY > fvHeight) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+})

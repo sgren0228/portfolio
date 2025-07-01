@@ -488,6 +488,18 @@ h3 {
   left: 0;
   right: 0;
   z-index: 12;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+#header.scrolled {
+  transition: background-color 0.5s ease;
+  background-color: #000;
+}
+#header.scrolled .site__title {
+  color: #fff;
+}
+#header.scrolled #hamburger span {
+  background-color: #fff;
 }
 #header .site__title {
   font-size: 30px;

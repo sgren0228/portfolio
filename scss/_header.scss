@@ -5,6 +5,20 @@
     left: 0;
     right: 0;
     z-index: 12;
+    background-color: transparent;
+    transition: background-color .5s ease;
+    &.scrolled {
+        transition: background-color .5s ease;
+        background-color: #000;
+        .site__title {
+            color: #fff;
+        }
+        #hamburger {
+            span {
+                background-color: #fff;
+            }
+        }
+    }
     .site__title {
         font-size: 30px;
         letter-spacing: 5px;
