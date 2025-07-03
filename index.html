@@ -21,11 +21,10 @@
       <nav>
         <ul class="header__list">
           <li><a href="#">HOME</a></li>
-          <li><a href="#">VALUES</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li><a href="#">WORKS</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#values">VALUES</a></li>
+          <li><a href="#service">SERVICE</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -165,27 +164,61 @@
         <h2 class="sec__title">WORKS<span>実績</span></h2>
         <span class="detail">※クリックすると詳細をご覧いただけます。</span>
         <ul class="works__list">
-          <li class="works__item">
+          <li class="works__item" data-modal="modal1">
             <img src="img/works1.png" alt="">
             <span class="category">架空サイト</span>
           </li>
-          <li class="works__item">
+          <li class="works__item" data-modal="modal2">
             <img src="img/works2.png" alt="">
             <span class="category">架空サイト</span>
           </li>
-          <li class="works__item">
+          <li class="works__item" data-modal="modal3">
             <img src="img/works3.png" alt="">
-            <span class="category">架空サイト</span>
+            <span class="category orange">オリジナル</span>
           </li>
         </ul>
       </div>
+      <div id="modal1" class="modal">
+        <h3 class="modal__title">青牡丹工務店サイト</h3>
+        <img src="img/works1.png" alt="">
+        <ul>
+          <li>対応範囲：デザインカンプからのコーディング</li>
+          <li>日数：10日程度（1日5時間程度）</li>
+          <li>使用技術：HTML/CSS/SCSS/JS/jQuery</li>
+          <li>実装ポイント：スライド（Slick使用）/ハンバーガーメニュー/モーダルウィンドウ/ローディング画面</li>
+        </ul>
+        <a href="https://sgren0228.github.io/demo1/"><p>サイトはこちらをクリック</p></a>
+      </div>
+      <div id="modal2" class="modal">
+        <h3 class="modal__title">青牡丹工務店サイト</h3>
+        <img src="img/works2.png" alt="">
+        <ul>
+          <li>対応範囲：デザインカンプからのコーディング</li>
+          <li>日数：現在進行中</li>
+          <li>使用技術：HTML/CSS/SCSS/JS/jQuery/PHP（WordPress化）</li>
+          <li>実装ポイント：ヘッダー切り替え/スライド（Slick使用）/ハンバーガーメニュー/WordPressオリジナルデザイン</li>
+        </ul>
+        <a href="https://sgren0228.github.io/demo1/"><p>サイトはこちらをクリック</p></a>
+      </div>
+      <div id="modal3" class="modal">
+        <h3 class="modal__title">青牡丹工務店サイト</h3>
+        <img src="img/works3.png" alt="">
+        <ul>
+          <li>対応範囲：デザインから全て</li>
+          <li>日数：5日程度</li>
+          <li>使用技術：HTML/CSS/SCSS/JS/gulp</li>
+          <li>実装ポイント：スライド（Slick使用）/ハンバーガーメニュー/モーダルウィンドウ/ローディング画面</li>
+        </ul>
+        <a href="https://sgren0228.github.io/portfolio/"><p>サイトはこちらをクリック</p></a>
+      </div>
+      <div id="mask"></div>
     </section>
   </main>
   <footer id="footer">
     <div class="wrapper">
       <div class="flex">
         <p class="copyright">&copy;2025 ren-web</p>
-        <a href="index.html">
+        <a href="#">
           <div class="top__btn">
             <i class="fa-solid fa-arrow-up icon"></i>
           </div>
