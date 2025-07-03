@@ -683,7 +683,7 @@ h3 {
 }
 #footer .flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 #footer .copyright {
@@ -702,4 +702,33 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#footer .mail {
+  font-size: 16px;
+  color: #fff;
+}
+#footer .mail i {
+  color: #fff;
+  margin-right: 10px;
+}
+#footer .mail span {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.rotateY:hover {
+  animation-name: rotateYAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateYAnime {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
 }
