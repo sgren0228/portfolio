@@ -88,3 +88,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// フェードイン
+function fadeInOnScroll() {
+    document.querySelectorAll('.fadein, .fadein-left').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const showTiming = window.innerHeight > 600 ? 200 : 40; // モバイル対応
+      if (rect.top < window.innerHeight - showTiming) {
+        el.classList.add('is-show');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', fadeInOnScroll);
+  window.addEventListener('load', fadeInOnScroll);
